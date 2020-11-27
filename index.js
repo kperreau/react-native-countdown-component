@@ -143,11 +143,14 @@ _handleAppStateChange = currentAppState => {
         {paddinghorizontal: 20, height: size * 2.6},
         digitStyle,
       ]}>
-        <Text style={[
-          styles.digitTxt,
-          {fontSize: size},
-          digitTxtStyle,
-        ]}>
+        <Text
+	  style={[
+            styles.digitTxt,
+            {fontSize: size},
+            digitTxtStyle,
+          ]}
+	  allowFontScaling={false}
+    	>
           {d}
         </Text>
       </View>
@@ -158,11 +161,14 @@ _handleAppStateChange = currentAppState => {
     const {timeLabelStyle, size} = this.props;
     if (label) {
       return (
-        <Text style={[
-          styles.timeTxt,
-          {fontSize: size / 1.8},
-          timeLabelStyle,
-        ]}>
+        <Text
+          style={[
+            styles.timeTxt,
+            {fontSize: size / 1.8},
+            timeLabelStyle,
+          ]}
+      	  allowFontScaling={false}
+      	>
           {label}
         </Text>
       );
@@ -184,11 +190,14 @@ _handleAppStateChange = currentAppState => {
     const {separatorStyle, size} = this.props;
     return (
       <View style={{justifyContent: 'center', alignItems: 'center'}}>
-        <Text style={[
-          styles.separatorTxt,
-          {fontSize: size * 1.2},
-          separatorStyle,
-        ]}>
+        <Text
+	  style={[
+            styles.separatorTxt,
+            {fontSize: size * 1.2},
+            separatorStyle,
+          ]}
+    	  allowFontScaling={false}
+    	>
           {':'}
         </Text>
       </View>
